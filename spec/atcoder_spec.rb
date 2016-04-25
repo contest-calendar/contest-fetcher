@@ -40,7 +40,7 @@ describe Contest::AtCoder, :vcr => vcr_opts do
     it { expect(subject[:duration_sec]).to eq 120 * 60 }
   end
 
-  include Helpers::GAPI
+  include Helpers::GAPIEnv
   let(:fetcher) { Contest::AtCoder.new(gapi_client_email, gapi_private_key, gapi_private_pass) }
   let(:arc016_start) { DateTime.parse("2013/11/04 21:00:00 JST").to_time.to_i }
   let(:abc023_start) { DateTime.parse("2015/05/09 21:00:00 JST").to_time.to_i }
