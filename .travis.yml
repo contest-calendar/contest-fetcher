@@ -21,4 +21,4 @@ before_install:
 - mkdir -p tmp
 - openssl aes-256-cbc -K $encrypted_8736eb2aea80_key -iv $encrypted_8736eb2aea80_iv
   -in spec/travis/gapi_private_key.txt.enc -out tmp/gapi_private_key.txt -d
-- export GAPI_PRIVATE_PASSWORD=$(cat tmp/gapi_private_key.txt)
+- export GAPI_PRIVATE_KEY=$(cat tmp/gapi_private_key.txt)
