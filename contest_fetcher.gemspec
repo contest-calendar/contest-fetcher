@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "google-api-client", "~> 0.9.0"
 
   spec.add_development_dependency "pry", "~> 0.10.0"
-  spec.add_development_dependency "bundler", "~> 1.11.0"
+  spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake", "~> 10.0.0"
   spec.add_development_dependency "rspec", "~> 3.4.0"
   spec.add_development_dependency "vcr", "~> 3.0.0"
