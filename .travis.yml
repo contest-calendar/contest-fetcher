@@ -1,0 +1,22 @@
+language: ruby
+
+rvm:
+  - "2.3.0"
+  - "2.2"
+  - "2.1"
+  - "2.0"
+  - "1.9"
+
+cache:
+  bundler: true
+
+deploy:
+  provider: rubygems
+  api_key:
+    master:
+      secure: "joR4Qra/RbD/qVQk/YHB6ahqyoj7OHEWaxIZmDo3OpLHH9GjM1RWEs+9OA5e/VyKEWFsdKLB5QpibVQyziQEkFkas0jvZ8xONLz1UHSylVfJC3VpihVmk9CiMKs6j52gdbhngQa1zOnE1xzzKjeRoXaEbPI5dK1VnrF2TpsdMafWzPHvMzinCdGD/qGzT9Kk4GQq0ivTh3IJJggmdg+97S79/Dd5o3U8dWh2y1pFBYASQd/SgKFv1b/41XDo6umbxq9j1hvZIaCl8iHs+jW15Rc1dOhkjt5PEGlfWp82N41W88m6LkeRpfhPYooOo+/65rXWZYocbp33RttbY1JvGR7iT8O+I0hswNa6zBkJ5/fF0PZ89YbzdwKMvrS7AlbvaE47P9wEFNeYDzjPxzD398zpLAASRdKMBQLy7VnfhHeT8VXrjZ1uIHNF2oArY+Duek5fqK9U7Q3mFpjDAUwBjiIDZE+fS48xlvRsrzY8K5gFyraY6ttQfb1THSLPIH2hyLx8xkmOlp5Rt3sS0S1HtspbDQoZlEuLGBta8S7yeqXAr3l+5Sl2Ag5pVPSgcsBzVtgg3RVgqnJPDnsRbtYa4/YkG7aKF3rb5zKDXOSpAjUpC91cLl70rtVR+tVDsoczlpxPm37thn1plv1OCbZ4tyyf0XgA5SIocCBXDSn593A="
+  gem:
+    master: contest_fetcher
+  on:
+    repo: contest-calendar/contest-fetcher
+    ruby: "2.3.0"
